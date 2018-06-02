@@ -57,6 +57,7 @@ public class DataActivity extends AppCompatActivity {
         StringRequest request = new StringRequest(Request.Method.GET, url, onCoursesLoaded, onCoursesError);
 
         requestQueue.add(request);
+
     }
 
 
@@ -86,6 +87,7 @@ public class DataActivity extends AppCompatActivity {
         @Override
         public void onErrorResponse(VolleyError error) {
             Log.e("PostActivity", error.toString());
+
         }
     };
 
